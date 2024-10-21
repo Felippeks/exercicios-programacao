@@ -1,0 +1,10 @@
+<div class="card">
+  <img [src]="car.image" alt="{{ car.name }}">
+  <div class="card-body">
+    <h5>{{ car.name }}</h5>
+    <p>Ano: {{ car.year }}</p>
+    <p>Preço por Dia: R$ {{ car.pricePerDay }}</p>
+    <button (click)="verMais()">Ver Mais</button>
+    <span class="favorite-icon" *ngIf="car.isFavorite">❤️</span>
+  </div>
+</div>

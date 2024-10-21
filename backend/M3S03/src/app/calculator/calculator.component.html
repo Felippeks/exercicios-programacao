@@ -1,0 +1,11 @@
+<div>
+    <input type="number" [(ngModel)]="num1" (input)="onInputChange()" placeholder="Número 1">
+    <input type="number" [(ngModel)]="num2" (input)="onInputChange()" placeholder="Número 2">
+    <button (click)="somar()">Somar</button>
+    <button (click)="subtrair()">Subtrair</button>
+    <button (click)="dividir()">Dividir</button>
+    <button (click)="multiplicar()" [disabled]="num1 === 0 || num2 === 0">Multiplicar</button>
+    <button (click)="reset()">Resetar</button>
+    <p>Resultado: {{ resultado }}</p>
+  </div>
+  
