@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="mx-auto text-center text-lg parallax flex justify-center">
+  <div class="flex justify-center flex-col max-w-2xl xl:mx-auto mx-4 items-center xl:py-0 py-4 mt-36 bg-[#fef2e2] rounded-3xl text-justify border-[6px] border-[#f79470] shadow-lg shadow-slate-500 xl:px-10 px-4" *ngIf="diet">
+    <h2 class="xl:text-2xl text-xl font-bold italic ">{{diet.name}}</h2>
+    <p class="mt-4 xl:text-sm text-xs font-bold text-gray-600">{{diet.description}}</p>
+    <p class="mt-4 xl:text-sm text-xs font-bold text-gray-600">Calorias: {{diet.qttCalories}}</p>
+    <p class="mt-4 xl:text-sm text-xs font-bold text-gray-600">Dias de alimentação: {{diet.qttDaysFeed}}</p>
+    <p class="mt-4 xl:text-sm text-xs font-bold text-gray-600">Alimentos: {{diet.alimentos}}</p>
+    <img class="w-72 h-44 shadow-lg shadow-slate-700 rounded-3xl mt-4" [src]="diet.imageLink" alt="{{diet.name}}">
+    <button class="block mx-auto xl:mt-8 mt-4 rounded-full border-none shadow-md shadow-slate-500 text-[#3b595d] hover:text-white max-w-full px-5 text-base 2xl:text-2xl italic text-center bg-[#f79470] transform transition-all duration-300 hover:scale-110 hover:bg-[#3b595d]" (click)="BackToDiets()">Voltar</button>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="flex flex-col mx-auto text-center text-lg parallax">
+  <div
+    class="bg-[#fef2e2] px-20 py-10 border-[6px] items-center mx-auto justify-center flex flex-col border-[#f79470] shadow-xl shadow-slate-500 rounded-3xl float-right xl:ml-[300px] xl:mt-52 mt-44 xl:w-[600px] w-[380px]"
+  >
+    <h2 class="xl:text-3xl text-xl font-bold italic m-6 text-[#3b595d]">
+      Perfil do Usuário
+    </h2>
+    <img
+      class="xl:w-44 xl:h-44 w-32 h-32 rounded-full mb-4"
+      :src="./assets/profile.png"
+      alt="Profile image"
+    />
+    <div class="border-[2px] xl:w-[500px] w-[340px] items-center xl:p-10 justify-center flex flex-col border-[#f79470] shadow-xl shadow-slate-500 rounded-3xl">
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Id:</strong>
+        {{ userData.userCode }}
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Nome:</strong>
+        {{ userData.name }}
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Email:</strong>
+        {{ userData.email }}
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Idade:</strong>
+        {{ userData.date | age }} anos
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Peso:</strong>
+        {{ userData.weight }} kgs
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Altura:</strong>
+        {{ userData.height | height }}
+      </p>
+      <p class="italic xl:text-2xl text-sm">
+        <strong class="text-[#D2691E] font-medium">Endereço:</strong>
+        {{ userAddress }}
+      </p>
+    </div>
+  </div>
+</section>

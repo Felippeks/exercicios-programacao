@@ -1,0 +1,23 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 20%;
+    margin: auto;
+}
+
+#board {
+    background-color: black;
+}
+
+#restart {
+    background-color: black;
+    color: #00fc00;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: 20px;
+}

@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oficina Mecânica</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Serviços Oferecidos</h1>
+    <div id="services"></div>
+
+    <h1>Adicionar serviços</h1>
+    <form id="service-update-form">
+      <input type="text" id="service-name" placeholder="Nome do Serviço" />
+      <input type="number" id="service-price" placeholder="Preço do Serviço" />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h1>Contate-nos</h1>
+    <form id="contact-form">
+      <input type="text" id="contact-name" placeholder="Seu nome" />
+      <input type="email" id="contact-email" placeholder="Seu email" />
+      <textarea id="contact-message" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h1>Galeria de Fotos</h1>
+    <div id="photo-gallery">
+      <img src="./assets/imagem 1.jpg" alt="Descrição da imagem 1" />
+      <img src="./assets/imagem 2.jpg" alt="Descrição da imagem 2" />
+      <img src="./assets/imagem 3.webp" alt="Descrição da imagem 3" />
+    </div>
+
+    <h1>Localização</h1>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.321847089643!2d-48.63444568497876!3d-27.59589998300045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d7a3a3756a4a33%3A0x8d3174652fe7c4ab!2sS%C3%A3o%20Jos%C3%A9%20-%20State%20of%20Santa%20Catarina%2C%20Brazil!5e0!3m2!1sen!2sus!4v1637084746908!5m2!1sen!2sus"
+        width="600"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <h1>Depoimentos</h1>
+    <div id="testimonials">
+      <div class="testimonial">
+        <p>
+          "A oficina mecânica é incrível! Eles consertaram meu carro rapidamente
+          e o serviço foi de primeira qualidade. Estou muito satisfeito!" - João
+        </p>
+      </div>
+      <div class="testimonial">
+        <p>
+          "Eu sempre trago meu carro aqui para manutenção e eles nunca me
+          decepcionam. A equipe é profissional e sempre muito útil." - Maria
+        </p>
+      </div>
+      <div class="testimonial">
+        <p>
+          "Excelente serviço ao cliente! Eles foram honestos e transparentes
+          sobre o que precisava ser feito. Recomendo fortemente esta oficina." -
+          Paulo
+        </p>
+      </div>
+      <div class="testimonial">
+        <p>
+          "Estou muito impressionado com a qualidade do trabalho. Meu carro está
+          funcionando melhor do que nunca. Obrigado!" - Ana
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

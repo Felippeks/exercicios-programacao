@@ -1,0 +1,19 @@
+<app-header></app-header>
+<main class="parallax flex flex-col justify-center items-center pb-2">
+  <section>
+    <h4
+      class="flex flex-col mt-24 bg-[#fef2e2] p-16 border-[6px] border-[#f79470] shadow-xl shadow-slate-500 rounded-3xl max-w-2xl text-center xl:text-4xl italic text-sm text-[#f79470]"
+    >
+      Seja bem vindo!
+      <span class="text-base xl:text-5xl text-[#3b595d]"
+        >{{ userData.name }} !</span
+      >
+    </h4>
+  </section>
+  <section class="my-10">
+    <app-sidebar></app-sidebar>
+  </section>
+  <div class="bottom-0 pb-10 flex flex-col justify-center items-center">
+    <app-atividades-item></app-atividades-item>
+  </div>
+</main>

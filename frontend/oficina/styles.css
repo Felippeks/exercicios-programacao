@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+form input, form textarea, form button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+form button:hover {
+    background-color: #666;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#services div {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin: 10px;
+    padding: 10px;
+    width: calc(50% - 20px);
+}
+
+#photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photo-gallery img {
+    width: 400px; 
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+
+#map {
+    display:flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    
+}
+
+.testimonial {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+}

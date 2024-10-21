@@ -1,0 +1,13 @@
+<section class="container">
+    <form [formGroup]="loginform">
+        <label for="usercode">Código do usuário</label>
+        <input type="text" id="usercode" formControlName="usercode" />
+      
+        <label for="password">Senha</label>
+        <input type="password" id="password" formControlName="password" />
+      
+        <button type="submit" (click)="verificarCamposPreenchidos()" (keydown.enter)="verificarCamposPreenchidos()">Entrar</button>
+        <button type="button" (click)="cadastrar()">Cadastrar</button>
+      </form>
+</section>
+   

@@ -1,0 +1,24 @@
+<p-button class="btn-add" (click)="showDialog()" icon="pi pi-external-link" label="Adicionar atividade"></p-button>
+<p-dialog header="Adicionar Atividades" [(visible)]="visible" [modal]="true" [style]="{width: '700px', height:'700px'}">
+  <div>
+    <div class= "my-4 border-2 rounded-md">
+      <label for="tipo">Tipo de Atividade: </label>
+      <p-dropdown id="tipo" [(ngModel)]="atividade.tipo" [options]="tiposAtividade" aria-label="Tipo de Atividade"></p-dropdown>
+    </div>
+    <div class= "my-4 border-2 rounded-md py-2">
+      <label for="data">Data Realizada: </label>
+      <p-calendar id="data" [(ngModel)]="atividade.data" dateFormat="dd/mm/yy" [iconDisplay]="'input'" [showIcon]="true" aria-label="Data Realizada" pInputText placeholder="--/--/----"></p-calendar>
+    </div>
+    <div class= "my-4 border-2 rounded-md py-2">
+      <label for="distancia">Distância (opcional): </label>
+      <input id="distancia" type="text" [(ngModel)]="atividade.distancia" pInputText placeholder="Distância em km">
+    </div>
+    <div class= "my-4 border-2 rounded-md py-2">
+      <label for="tempo">Duração (opcional): </label>
+      <input id="tempo" type="text" [(ngModel)]="atividade.tempo" pInputText placeholder="Tempo em minutos">
+    </div>
+  </div>
+  <p-footer [ngStyle]="{backgroundColor:'var(--primary-color)', color: 'var(--primary-color-text)', borderRadius: 'var(--border-radius)', padding: '1rem'}">
+    <p-button (click)="salvarAtividade()" label="Salvar"></p-button>
+  </p-footer>
+</p-dialog>

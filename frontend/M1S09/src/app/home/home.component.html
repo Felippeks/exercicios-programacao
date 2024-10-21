@@ -1,0 +1,9 @@
+<main class="container">
+  <div class="list-product">
+    <app-card *ngFor="let produto of listaFiltrada" [item]="produto"></app-card>
+  </div>
+  <div class="btn-seach">
+    <input [(ngModel)]="EndSearch" placeholder="Produtos" (keydown.enter)="pesquisar()"/>
+    <button (click)="pesquisar()">Search</button>
+  </div>
+</main>
