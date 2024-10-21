@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="/assets/lista-de-tarefas.png" type="image/x-icon">
+    <title>Exercicio semana 05</title>
+  </head>
+  <body>
+    <img src="./assets/logo.png" alt="Logo" />
+    <div id="header">
+      <h1>Minha Lista de Tarefas</h1>
+      <p id="contador">Número de tarefas: 0</p>
+    </div>
+    <div id="container">
+      <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa" />
+      <button id="adicionarTarefa">Adicionar</button>
+    </div>
+
+    <ul id="listaDeTarefas"></ul>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <p>O campo de tarefa está vazio e precisa ser preenchido.</p>
+      </div>
+    </div>
+    <div id="modal2" class="modal2">
+      <div class="modal2-content">
+        <span class="close-button2">×</span>
+        <p>Essa tarefa já está na lista de tarefas.</p>
+      </div>
+    </div>
+    <div id="modal3" class="modal3">
+      <div class="modal3-content">
+        <span class="close-button3"></span>
+        <p>Deseja realmente excluir a tarefa?</p>
+        <button id="confirmDelete">Sim</button>
+        <button id="cancelDelete">Não</button>
+      </div>
+    </div>
+    <div id="lixeira" style="display: none">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-trash-2"
+      >
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path
+          d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m6 0V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"
+        ></path>
+        <line x1="10" y1="11" x2="10" y2="17"></line>
+        <line x1="14" y1="11" x2="14" y2="17"></line>
+      </svg>
+    </div>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
